@@ -1,3 +1,4 @@
+import logoPraxentia from './logo.svg';
 import React, { useState, useEffect } from 'react';
 import { Target, ChevronDown, ChevronUp, MessageCircle, Briefcase, Droplet, LayoutDashboard, Radar, Database, Loader2 } from 'lucide-react';
 import RadarProspectos from './RadarProspectos';
@@ -124,7 +125,15 @@ export default function CrmMaster() {
 
   return (
     <div className={`p-4 md:p-6 mx-auto font-sans min-h-screen flex flex-col ${themeColors.bg} transition-colors duration-300 overflow-hidden`}>
-      
+
+     {/* 🚀 LOGO Y TÍTULO OFICIAL 🚀 */}
+      <div className="flex items-center gap-4 mb-4 border-b border-slate-800 pb-4">
+        <img src={logoPraxentia} alt="Praxentia Logo" className="h-10 drop-shadow-lg" />
+        <div>
+          <h1 className="text-xl font-black text-slate-200 uppercase tracking-widest">MASV OS <span className="text-emerald-500">v5.0</span></h1>
+          <p className="text-xs text-slate-500 font-bold tracking-wider">CENTRAL DE MANDO B2B</p>
+        </div>
+      </div> 
       {/* HEADER: SWITCH DE EMPRESA Y PESTAÑAS */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-slate-800 pb-4">
         <div>
